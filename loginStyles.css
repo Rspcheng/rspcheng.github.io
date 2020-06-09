@@ -1,0 +1,167 @@
+body {
+    background-color: rgba( 52,95,190,0.3);
+}
+
+.navBar {
+    overflow: hidden;
+    background-color: #f3de1c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 19px 21px;
+    text-decoration: none;
+}
+
+.navBar a:hover {
+    background-color: #345FBE;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.navBar a:hover {
+    color: white;
+    transition: .3s ease;
+}
+
+body html {
+    height: 50%
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    height: 100vh;
+    background-image: linear-gradient(rgba( 52,95,190,0.2), rgba( 52,95,190,0.3)), url(japan.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*(52,95,190)*/
+
+.container {
+    position: center;
+    right: 0;
+    margin: 30px;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 20px;
+    margin 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color:#ddd;
+    outline: none;
+}
+
+.btn {
+    background-color: #f3de1c;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border: solid white 20px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #f3de1c;
+    padding: 10px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 68px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-linkedin {
+    background: #345FBE;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #345FBE;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #345FBE;
+    color: white;
+  }
+
+  /*footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #f3de1c;
+    padding: 10px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 68px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-linkedin {
+    background: #345FBE;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #345FBE;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #345FBE;
+    color: white;
+  }
+
+  

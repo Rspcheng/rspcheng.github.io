@@ -1,0 +1,317 @@
+/*hashtag is id and . is class*/
+
+.navBar {
+    overflow: hidden;
+    background-color: #f3de1c;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+}
+
+.navBar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 19px 21px;
+    text-decoration: none;
+}
+
+.navBar a:hover {
+    background-color: #ffc107;
+    font-family: sans-serif;
+    color: black;
+    cursor: pointer;
+}
+
+.navBar a:hover {
+    color: black;
+    transition: .3s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba( 52,95,190,0.3);
+}
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient(rgba( 0,0,0,0.5), rgba( 0,0,0,0.5)), url(beach.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color:#fff;
+    margin-bottom: 70px;
+    font-size: 45px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.search-field {
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+
+.airport {
+    width:250px;
+}
+
+.location {
+    width: 250px;
+}
+
+.search-btn {
+    height: 45px;
+    width: 130px;
+    background: #f3de1c;
+    border: none;
+    color: #000;
+    border-radius: 25px;
+}
+
+.search-btn:hover {
+    background: #ffc107;
+    cursor: pointer;
+}
+
+.form-box {
+    background: rgba( 0,0,0,0.5);
+    padding: 30px;
+    border-radius: 53px;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/*#f3de1c*/
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 100px 0;
+}
+
+.destination {
+    position: relative;
+    top: 50%;
+    left: 41%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 30px;
+    max-width: 250px;
+    padding: 20px;
+    background-color: #345FBE;
+    font-family: sans-serif;
+    color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.destination:hover {
+    background: #eee;
+    color: black;
+    transition: .3s ease;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Arial, Helvetica, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: lightgray;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* doesn't work... */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+  }
+
+.active {
+    background-color: #717171;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.plan:after {
+    content: "";
+    clear: both;
+    display: flex;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.caption {
+    font-family: sans-serif;
+    color:white
+}
+
+.option {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    float:left;
+    padding: 5px;
+}
+
+/* display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40%; */
+
+/* position: relative;
+width: 50%;
+max-width: 300px;
+float:left;
+padding: 5px; */
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 75px;
+    background: rgb( 0,0,0);
+    background: rgba( 243, 222, 28,0.5);
+    width: 97%;
+    transition: .5s ease;
+    opacity: 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.option:hover .overlay {
+    opacity: 1;
+}
+
+/*was stuck on trying to center the 3 options and problem solved it by adding another element to float by hiding it*/
+.option.hidden {
+    visibility: hidden;
+}
+
+.para {
+    display: flex;
+    justify-content: center;
+    padding: 150px 350px 50px 350px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.paragraph {
+    display: flex;
+    justify-content: center;
+    padding: 15px 350px 100px 350px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #f3de1c;
+    padding: 10px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 68px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-linkedin {
+    background: #345FBE;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #345FBE;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #345FBE;
+    color: white;
+  }
+
